@@ -2,11 +2,76 @@
 <html>
     <head>
         <title>Search</title>
+        <style>
+            #sb {
+                max-width: 350px;
+                margin: auto;
+                padding: 300px;
+            }
+
+            #lucky {
+                max-width: 150px;
+                margin: auto;
+                padding: -300px;
+            }
+
+            #searchb {
+                border-radius: 35px;
+                width: 450px;
+                height: 35px;
+                border: 1px solid #ccc;
+                position: relative;
+                left: -45px; 
+            }
+
+            #sbutton {
+                position: relative;  
+                top: 20px;
+                left: 60px;
+                height: 30px;  
+            }
+
+            .topnav {
+                float: right;
+                text-align: center;
+                padding: 14px 16px;
+            }
+
+            #IFL {
+                position: relative;  
+                top: -310px;
+                left: 80px;
+                height: 30px;
+            }
+
+            #image {
+                position: relative;
+                left: -20px;
+            }
+
+            img {
+                position: relative;
+                top: 275px;
+                left: 500px;
+            }
+
+            body {
+                overflow: hidden;
+            }
+        </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input type="text" name="q">
-            <input type="submit" value="Google Search">
-        </form>
+        <img src="googlelogo_color_272x92dp.png">
+        <div class="topnav">
+            <a href="images.html" id="image">Images</a>
+            <a href="advanced_search.html">Advanced Search</a>
+        </div>
+        <form action="https://google.com/search" id="sb">
+            <input type="text" name="q" id="searchb">
+            <input type="submit" value="Google Search" id="sbutton">   
+        </form>           
+        <form action="https://www.netflix.com/in/title/81002370" id="lucky">
+            <input type="submit" value="I'm Feeling Lucky" id="IFL">
+        </form> 
     </body>
 </html>
